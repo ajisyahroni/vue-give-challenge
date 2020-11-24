@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman profile</title>
+    <script src="../assets/lib/vue.js"></script>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+</head>
+
+<body>
+    <div id="app" class="container mt-5">
+    
+
+        <card-component 
+        description="lorem ipsum profile" 
+        title="ini judul pada halaman description profile"/>
+        
+    </div>
+    <!-- component -->
+    <script src="./js/main.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                title: 'Card profile',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolore in ipsam tenetur minima perspiciatis dolorum odio placeat, ea similique repudiandae. Deleniti autem, minima beatae consectetur eaque ',
+            }
+        })
+        
+    </script>
+    
+
+</html>

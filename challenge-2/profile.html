@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Index 2</title>
+    <script src="../assets/lib/vue.js"></script>
+    <link rel="stylesheet" href="../assets/css/bootstrap.css">
+</head>
+
+<body>
+    <div id="app" class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ title }}</h5>
+                <p class="card-text text-justify">{{description}}</p>
+            </div>
+            <div class="card-footer">
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-outline-danger">hapus</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- component -->
+    <script src="./js/main.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                title: 'Card Index',
+                description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolore in ipsam tenetur minima perspiciatis dolorum odio placeat, ea similique repudiandae. Deleniti autem, minima beatae consectetur eaque ',
+            }
+        })
+        
+    </script>
+    
+
+</html>
